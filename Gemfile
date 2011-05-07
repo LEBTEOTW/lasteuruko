@@ -17,6 +17,11 @@ gem 'therubyracer-heroku', '0.8.1.pre3', :group => :production
 
 gem 'jquery-rails'
 
+gem 'oa-core'
+gem 'oa-oauth'
+
+gem 'twitter'
+
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
