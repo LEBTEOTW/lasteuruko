@@ -1,12 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.beta1'
-
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem 'rails', '3.1.0.rc1'
 
 gem 'pg'
-gem 'sqlite3'
 
 # Asset template engines
 gem 'sass'
@@ -21,7 +17,7 @@ gem 'jquery-rails'
 gem 'oa-core'
 gem 'oa-oauth'
 
-gem 'twitter'
+gem 'hashie'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
