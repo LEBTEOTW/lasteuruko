@@ -13,41 +13,42 @@
   <p><strong>23012 people</strong> voted for Amsterdam to host EuRuKo 2012</p>
 </section>
 
-<section>
+<section id='where'>
   <h1>Where? Amsterdam</h1>
   <p>Where did you say? Amsterdam, isn’t that a sesspool of death and decay?
   Amsterdam is a compact little city, hosting dozens of world-class museums, miles of beautiful canals, well-maintained parks, narrow cobblestone streets with lots of Old World.</p>
-<iframe width="364" height="230" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Amsterdam,+Netherlands&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=39.184175,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Amsterdam,+North+Holland,+Netherlands&amp;ll=52.371617,4.899216&amp;spn=0.048211,0.124626&amp;t=p&amp;z=12&amp;output=embed"></iframe><br /><small><a href="http://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Amsterdam,+Netherlands&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=39.184175,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Amsterdam,+North+Holland,+Netherlands&amp;ll=52.371617,4.899216&amp;spn=0.048211,0.124626&amp;t=p&amp;z=12" style="color:#0000FF;text-align:left">View Larger Map</a></small>
   <aside>
-    <!-- fox news -->
-    <!-- youtube -->
+    <%= link_to image_tag("as_seen_on_fox_news.png", :alt => "as seen on fox news"), 'http://www.youtube.com/watch?v=BpU0NxPhA78' %>
+    <!-- <%= link_to image_tag("as_seen_on_fox_news.png", :alt => "as seen on fox news"), 'http://www.youtube.com/watch?v=x8bc_ZyORbM' %>  -->
+    <%= link_to image_tag("as_seen_on_youtube.jpg", :alt => "as seen on youtube"), 'http://www.youtube.com/watch?v=UXT6TJ6vKLo' %>
   </aside>
+<iframe width="364" height="230" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Amsterdam,+Netherlands&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=39.184175,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Amsterdam,+North+Holland,+Netherlands&amp;ll=52.371617,4.899216&amp;spn=0.048211,0.124626&amp;t=p&amp;z=12&amp;output=embed"></iframe>
+<small><a href="http://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Amsterdam,+Netherlands&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=39.184175,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Amsterdam,+North+Holland,+Netherlands&amp;ll=52.371617,4.899216&amp;spn=0.048211,0.124626&amp;t=p&amp;z=12" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 </section>
 
 <section>
   <h1>Why?</h1>
-  <p>Where did you say? Amsterdam, isn’t that a cesspool of death and decay?
-  Amsterdam is a compact little city, hosting dozens of world-class museums, miles of beautiful canals, well-maintained parks, narrow cobblestone streets with lots of Old World.</p>
+  <p>Amsterdam is awesome. It's a laidback, straight-forward, no-frills piece of heaven smack in the middle of Europe. One of the most obvious choices in programming language for Amsterdamers is Ruby, since it's a laidback, straight-forward, no-frills piece of software. Partly due to this (and partly due to the anxiety-inducing annual race for Euruko tickets every year) we propose to host the 2012 edition of Euruko in Amsterdam. And since the world's gonna end next year anyway, we might as well have the best Euruko ever.</p>
 </section>
 
 <section>
   <h1>Who?</h1>
   <figure>
-    <%= image_tag 'bruno2.jpg' %>
+    <%= image_tag 'bruno2.jpg', :alt => 'Bruno Antunes' %>
     <figcaption>
-      Bruno Antunes
+      <%= link_to "Bruno Antunes", "http://twitter.com/b_antunes" %>
     </figcaption>
   </figure>
   <figure>
-    <%= image_tag 'josh.jpg' %>
+    <%= image_tag 'josh.jpg', :alt => 'Josh Kalderimis' %>
     <figcaption>
-      Josh Kalderimis
+      <%= link_to "Josh Kalderimis", "http://twitter.com/joshkalderimis" %>
     </figcaption>
   </figure>
   <figure>
-    <%= image_tag 'justin2.jpg' %>
+    <%= image_tag 'justin2.jpg', :alt => 'Justin Halsall' %>
     <figcaption>
-      Justin Halsall
+      <%= link_to "Justin Halsall", "http://twitter.com/juice10" %>
     </figcaption>
   </figure>
 </section>

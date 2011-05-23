@@ -5,21 +5,21 @@
 */
 $grid-margin: 20px;
 $grid-column: 172px;
+$page-width: 596px;
+$content-width: $page-width - ($grid-margin * 2);
 
 body { font: 14px/1.3em Helvetica, Arial, sans-serif; }
-h1,h2,h3 { font-family: "Nobile", Times, serif; font-weight: normal; line-height: 1.5em; margin: 0 0 $grid-margin / 2 0; }
+h1,h2,h3 { font-family: "Molengo", Times, serif; font-weight: normal; line-height: 1.5em; margin: 0 0 $grid-margin / 2 0; }
 h1 { font-size: 48px }
 p { margin: $grid-margin 0 0 0; }
 
 header, section {
   margin: $grid-margin auto;
   display: block;
-  width: 596px;
+  width: $content-width;
   padding: $grid-margin;
   overflow: hidden;
 }
-
-aside { display: block; }
 
 header {
   overflow: hidden;
@@ -46,6 +46,11 @@ header {
     float: left;
     width: $grid-column;
   }
+}
+
+#where {
+  p { margin-bottom: $grid-margin; }
+  aside { float: right; width: $grid-column; }
 }
 
 section {
