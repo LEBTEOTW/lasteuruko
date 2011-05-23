@@ -16,6 +16,7 @@ header, section {
   display: block;
   width: 596px;
   padding: $grid-margin;
+  overflow: hidden;
 }
 
 aside { display: block; }
@@ -45,4 +46,9 @@ header {
     float: left;
     width: $grid-column;
   }
+}
+
+section {
+  figure { float: left; margin-left: $grid-margin; width: $grid-column; }
+  h1 + figure { margin-left: 0; }
 }
