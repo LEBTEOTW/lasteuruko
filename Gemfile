@@ -23,7 +23,7 @@ gem 'hashie'
 
 gem 'hoptoad_notifier', '~> 2.4.10'
 
-gem 'newrelic_rpm', '~> 3.0.0'
+# gem 'newrelic_rpm', '~> 3.0.0'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
