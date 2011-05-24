@@ -21,6 +21,8 @@ gem 'oa-oauth'
 
 gem 'hashie'
 
+gem 'hoptoad_notifier', '~> 2.4.10'
+
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
