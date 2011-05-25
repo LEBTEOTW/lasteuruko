@@ -11,6 +11,11 @@
     <a href="http://twitter.com/share" class="twitter-share-button" data-text="Vote for Amsterdam as the last city to host Euruko before the end of the world! #euruko" data-count="horizontal" data-via="lasteuruko">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   </aside>
   <p><strong><%= Voter.count %> people</strong> voted for Amsterdam to host EuRuKo 2012</p>
+  <p>
+    <% @voters.each do |voter| %>
+      <%= image_tag voter.profile_image_url %>
+    <% end %>
+  </p>
 </section>
 
 <section id='where'>
