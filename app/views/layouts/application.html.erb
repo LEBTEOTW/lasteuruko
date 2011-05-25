@@ -40,7 +40,7 @@
     $('#vote p:last img:last').fadeOut('slow', function() {
       $(this).remove();
 
-      var twitterLink = '<a href="http://twitter.com/' + data.voter.twitter_handle + '" target="_blank" title="' + data.voter.full_name + '">'
+      var twitterLink = '<a href="http://twitter.com/' + data.last_voter.twitter_handle + '" target="_blank" title="' + data.last_voter.full_name + '">'
       var twitterImage = '<img src="' + data.last_voter.profile_image_url + '" alt="' + data.last_voter.twitter_handle + '"/>'
 
       var linkAndImage = twitterLink + twitterImage + '</a>'
