@@ -8,6 +8,7 @@ gem 'pg'
 
 # Asset template engines
 gem 'sass'
+gem "compass", ">= 0.11.1"
 gem 'coffee-script'
 gem 'uglifier'
 
