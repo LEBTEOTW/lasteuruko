@@ -11,7 +11,8 @@ $grid-column: 172px;
 $page-width: 596px;
 $content-width: $page-width - ($grid-margin * 2);
 
-body { font: 14px/1.3em Helvetica, Arial, sans-serif; }
+body { font: 14px/1.3em Helvetica, Arial, sans-serif;
+  ::selection { background-color: red; }}
 h1,h2,h3 { font-family: "Molengo", Times, serif; font-weight: normal; line-height: 1.5em; margin: 0 0 $grid-margin / 2 0; }
 h1 { font-size: 48px }
 p { margin: $grid-margin 0 0 0; }

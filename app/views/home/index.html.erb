@@ -1,14 +1,14 @@
 <header>
   <h1><%= image_tag 'logo.png', :alt => 'Amsterdam 2012 candidate city' %></h1>
-  <h2>Vote for Amsterdam as host for the last Euruko before the end of the world!</h2>
-  <h3>The Mayans Predicted the world would end in 2012. So lets make the last Euruko the best one yet, and in Amsterdam!</h3>
+  <h2>Vote for Amsterdam as host for the last <%= link_to "EuRuKo", 'http://euruko2011.org', :target => '_blank' %> before the end of the world!</h2>
+  <h3>The Mayans Predicted the world would end in 2012. So lets make the last <%= link_to "EuRuKo", 'http://euruko2011.org', :target => '_blank' %> the best one yet, and in Amsterdam!</h3>
 </header>
 
 <section id='vote'>
   <aside>
     <%= link_to "+1 <small>with twitter</small>".html_safe, join_the_destruction_path, :class => 'vote' %>
     <iframe src="http://www.facebook.com/plugins/like.php?app_id=206204996084455&amp;href=http%3A%2F%2Flasteuruko.org&amp;send=true&amp;layout=button_count&amp;width=172&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:172px; height:21px;" allowTransparency="true"></iframe>
-    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Vote for Amsterdam as the last city to host Euruko before the end of the world! #euruko" data-count="horizontal" data-via="lasteuruko">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Vote for Amsterdam as the last city to host EuRuKo before the end of the world! #euruko" data-count="horizontal" data-via="lasteuruko">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   </aside>
   <p><strong><%= Voter.count %> people</strong> voted for Amsterdam to host EuRuKo 2012</p>
   <p>

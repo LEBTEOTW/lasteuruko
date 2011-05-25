@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Vote for Amsterdam as the last city to host Euruko before the end of the world!</title>
+  <title>Vote for Amsterdam as the last city to host EuRuKo before the end of the world!</title>
   <link href='http://fonts.googleapis.com/css?family=Metrophobic,Molengo,Nobile' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
@@ -18,6 +18,12 @@
   <link rel="shortcut icon" href="/favicon.ico">
 </head>
 <body>
+
+<% if flash[:notice] %>
+  <section class='flash'>
+
+  </section>
+<% end %>
 
 <%= yield %>
 
