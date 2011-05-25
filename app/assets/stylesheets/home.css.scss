@@ -39,18 +39,18 @@ header {
   @include border-radius(5px);
   a.vote {
     width: $grid-column;
-    height: $grid-margin * 2;
-    line-height: $grid-margin * 2;
+    height: 70px;
+    line-height: 1em;
     background-color: red;
     color: white;
     display: block;
     text-align: center;
-    font-size: 32px;
+    font-size: 48px;
     text-decoration: none;
     margin-bottom: $grid-margin / 2;
     @include border-radius(5px);
     &:hover { background-color: green; };
-    small { font-size: 14px;}
+    small { font-size: 14px; display: block; line-height: 14px; }
   }
   p { margin-left: $grid-column + $grid-margin; }
   strong {
