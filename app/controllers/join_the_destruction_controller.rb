@@ -5,7 +5,7 @@ class JoinTheDestructionController < ApplicationController
 
     voter = Voter.create_from_twitter_hash(auth_hash)
 
-    send_pusher_notification(voter)
+    send_pusher_notification(voter) if voter.recently_created?
 
     redirect_to root_path
   end

@@ -1,5 +1,9 @@
 class Voter < ActiveRecord::Base
 
+  after_create do
+    @recently_created = true
+  end
+
   class << self
     def create_from_twitter_hash(auth_hash)
       self.find_or_create_by_twitter_id(auth_hash['uid'], {
@@ -10,6 +14,10 @@ class Voter < ActiveRecord::Base
         :oauth_token_secret => auth_hash['credentials']['secret']
       })
     end
+  end
+
+  def recently_created?
+    !!@recently_created
   end
 
   def as_json
