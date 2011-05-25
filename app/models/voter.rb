@@ -12,4 +12,12 @@ class Voter < ActiveRecord::Base
     end
   end
 
+  def as_json
+    {
+      :full_name => self.full_name,
+      :twitter_handle => self.twitter_handle,
+      :profile_image_url => self.profile_image_url
+    }
+  end
+
 end

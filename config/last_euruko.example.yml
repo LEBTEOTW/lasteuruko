@@ -1,7 +1,13 @@
 development: &development
+
   twitter:
     consumer_key: key
     consumer_secret: secret
+
+  pusher:
+    app_id: id
+    app_key: key
+    app_secret: secret
 
 production:
   <<: *development

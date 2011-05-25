@@ -23,10 +23,17 @@ gem 'hashie'
 
 gem 'hoptoad_notifier', '~> 2.4.10'
 
+gem 'em-http-request',  '~> 0.3.0'
+gem 'pusher',           '~> 0.8.1'
+
 # gem 'newrelic_rpm', '~> 3.0.0'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :development do
+  gem 'thin'
+end
 
 group :test do
   # Pretty printed test output
