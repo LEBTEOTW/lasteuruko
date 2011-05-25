@@ -3,6 +3,9 @@
   They will automatically be included in application.css.
   You can use Sass (SCSS) here: http://sass-lang.com/
 */
+
+@import "compass";
+
 $grid-margin: 20px;
 $grid-column: 172px;
 $page-width: 596px;
@@ -33,6 +36,7 @@ header {
 #vote {
   background-color: #A3A3A3;
   color: white;
+  @include border-radius(5px);
   a.vote {
     width: $grid-column;
     height: $grid-margin * 2;
@@ -41,10 +45,12 @@ header {
     color: white;
     display: block;
     text-align: center;
-    font-size: 21px;
+    font-size: 32px;
     text-decoration: none;
     margin-bottom: $grid-margin / 2;
+    @include border-radius(5px);
     &:hover { background-color: green; };
+    small { font-size: 14px;}
   }
   p { margin-left: $grid-column + $grid-margin; }
   strong {
