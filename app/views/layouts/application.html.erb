@@ -39,11 +39,11 @@
 
     $('#vote p:last img:last').fadeOut('slow', function() {
       $(this).remove();
+
+      var twitterImage = '<img src="' + data.last_voter.profile_image_url + '" alt="' + data.last_voter.twitter_handle + '"/>'
+
+      $(twitterImage).hide().prependTo('#vote p:last').fadeIn('slow');
     });
-
-    var twitterImage = '<img src="' + data.last_voter.profile_image_url + '" alt="' + data.last_voter.twitter_handle + '"/>'
-
-    $(twitterImage).hide().prependTo('#vote p:last').fadeIn('slow');
   });
 </script>
 </body>
