@@ -32,6 +32,7 @@ gem 'pusher',           '~> 0.8.1'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development do
+  gem 'heroku'
   gem 'thin'
 end
 
