@@ -15,7 +15,7 @@
   <p><strong><%= Voter.count %> people</strong> voted for Amsterdam to host EuRuKo 2012</p>
   <p>
     <% @voters.each do |voter| %>
-      <%= link_to image_tag(voter.profile_image_url), "http://twitter.com/#{voter.twitter_handle}", :title => voter.full_name, :target => '_blank' %>
+      <%= link_to image_tag(voter.profile_image_url, :alt => voter.twitter_handle), "http://twitter.com/#{voter.twitter_handle}", :title => voter.full_name, :target => '_blank' %>
     <% end %>
   </p>
 </section>
