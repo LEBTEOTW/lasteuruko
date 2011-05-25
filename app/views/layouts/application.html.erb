@@ -32,9 +32,18 @@
   var pusher = new Pusher('f0b55e00c4b5f6372e5f');
   var channel = pusher.subscribe('destruction_votes');
   channel.bind('vote', function(data) {
-    $('#vote p strong').fadeOut();
-    $('#vote p strong').html(data.count + ' people');
-    $('#vote p strong').fadeIn();
+    $('#vote p strong').
+      fadeOut().
+      html(data.count + ' people').
+      fadeIn();
+
+    $('#vote p:last img:last').fadeOut('slow', function() {
+      $(this).remove();
+    });
+
+    var twitterImage = '<img src="' + data.last_voter.profile_image_url + '" alt="' + data.last_voter.twitter_handle + '"/>'
+
+    $(twitterImage).hide().prependTo('#vote p:last').fadeIn('slow');
   });
 </script>
 </body>
