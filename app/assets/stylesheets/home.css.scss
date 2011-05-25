@@ -33,6 +33,19 @@ header {
 #vote {
   background-color: #A3A3A3;
   color: white;
+  a.vote {
+    width: $grid-column;
+    height: $grid-margin * 2;
+    line-height: $grid-margin * 2;
+    background-color: red;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    margin-bottom: $grid-margin / 2;
+    &:hover { background-color: green; };
+  }
   p { margin-left: $grid-column + $grid-margin; }
   strong {
     display: block;
